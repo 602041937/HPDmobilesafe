@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_splash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/luncher_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#f00"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="版本号：3.0"
+        android:textSize="22sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_splash_version"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_splash_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="更新进度：0%"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+</RelativeLayout>

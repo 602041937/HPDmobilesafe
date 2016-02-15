@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hpdxay.hpdmobilesafe.HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="功能列表"
+        android:textSize="30sp" />
+
+    <com.hpdxay.hpdmobilesafe.ui.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:singleLine="true"
+        android:text="该手机安全卫士功能齐全，欢迎来下载，下载送豪礼,该手机安全卫士功能齐全，欢迎来下载，下载送豪礼" />
+
+    <GridView
+        android:id="@+id/gv_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"></GridView>
+
+</LinearLayout>
